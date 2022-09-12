@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.back-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+}
+
+#card {
+    display: flex;
+    width: 45vw;
+    height: 65vh;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.left-part {
+    background-position: center;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 40px;
+}
+
+h1 {
+    display: flex;
+    align-self: start;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin: 0;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+h2 {
+    display: flex;
+    align-self: start;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5vw;
+    margin: 0;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 20px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.prices {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2vw;
+    font-family: 'Fraunces', serif;
+    margin-left: 1vw;
+    display: inline-block;
+    margin: 0;
+}
+
+.no-price {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-left: 1vw;
+    display: inline-block;
+    margin: 0;
+    font-size: .9vw;
+    color: gray;
+}
+
+button {
+    width: 17vw;
+    height: 6vh;
+    border-radius: .5vw;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.shopping-icon {
+    width: 1vw;
+}
+
+button:hover {
+    background-color: hsl(156, 36%, 24%);
+    cursor: pointer;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width:375px) {
+    #card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .left-part {
+        background-position: center;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90vw;
+        height: 40vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .right-part {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        display: flex;
+        align-self: flex-start;
+        font-size: 4vw;
+    }
+
+    h2 {
+        width: 80vw;
+        font-size: 8.5vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .prices {
+        width: 80vw;
+    }
+
+    .main-price {
+        font-size: 9vw;
+    }
+
+    .no-price {
+        font-size: 3vw;
+    }
+
+    button {
+        box-sizing: border-box;
+        width: 80vw;
+        font-size: 4vw;
+        gap: 3vw;
+    }
+
+    .shopping-icon {
+        width: 4vw;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 10px;
+        font-size: 3vw;
+    }
+}
